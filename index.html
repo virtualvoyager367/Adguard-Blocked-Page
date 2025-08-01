@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Blocked</title>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .popup-box {
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      padding: 30px 40px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .title {
+      color: red;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #555;
+      margin: 15px 0;
+    }
+
+    .subtitle {
+      font-size: 18px;
+    }
+
+    .adguard {
+      font-weight: bold;
+      color: #32CD32; /* Lime green */
+    }
+
+    .error-code {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .back-button {
+      margin-top: 25px;
+      padding: 10px 25px;
+      background-color: #b00000; /* Red button */
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #d00000;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-box">
+    <div class="title">Website Blocked</div>
+    <hr>
+    <div class="subtitle">
+      Website Blocked by: <span class="adguard">AdGuard Home</span>
+    </div>
+    <div class="error-code">
+      Error Code: 504 Gateway Timeout
+    </div>
+    <hr>
+    <button class="back-button" onclick="history.back()">Go Back</button>
+  </div>
+</body>
+</html>
